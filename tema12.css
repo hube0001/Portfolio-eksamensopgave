@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #334b35;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 20px;
+}
+
+.venstre {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.tema-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Radio Canada Big";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #b2632c;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.billeder img {
+  width: 20%;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.tekst-container {
+  width: 269px;
+  height: 423px;
+  flex-shrink: 0;
+  padding: 25px;
+
+  border: 1px solid #fdac15;
+  background: #fae7d8;
+}
+
+.tekst-container p {
+  color: #000;
+  font-family: Labrada;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 181.818% */
+}
+
+.tekst-container h2 {
+  color: #000;
+  font-family: Labrada;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 133.333% */
+}

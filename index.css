@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #334b35;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 20px;
+}
+
+.venstre {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.portfolio-title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.portfolio-title h1 {
+  z-index: 1;
+
+  color: #fae7d8;
+  font-family: "Radio Canada Big";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.baggrundtekst {
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  color: #334b35;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fdac15;
+  font-family: "Radio Canada Big";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150px;
+}
+
+.profil {
+  background-color: #b2632c;
+  height: 400px;
+  padding: 1rem;
+  text-align: center;
+  width: 200px;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+.imagcontainer {
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.imgcontainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.navn {
+  background-color: #2f4832;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.semester {
+  color: #fae7d8;
+  font-family: "Radio Canada Big";
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: #eaeaea;
+}
+
+.projektbutton {
+  background: #ffb300;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px #000;
+  cursor: pointer;
+}
