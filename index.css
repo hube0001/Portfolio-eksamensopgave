@@ -101,7 +101,7 @@ body {
 .nav-links a.active {
   border-bottom: 2px solid black;
 }
-/******************************************************************/
+/******************************** MAIN **********************************/
 
 .portfolio-title {
   position: relative;
@@ -201,6 +201,8 @@ body {
   box-shadow: 0 8px 29px rgba(0, 0, 0, 0.4); /* strong shadow */
   transform: translateY(-5px) scale(1.05);
 }
+
+/*************************************** DESKTOP **********************************/
 
 @media (min-width: 768px) {
   body {
