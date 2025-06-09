@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #334b35;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 20px;
+}
+
+.navnheader {
+  color: #fff;
+  font-family: Labrada;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.burger-menu span {
+  width: 30px;
+  height: 3px;
+  background-color: #fae7d8;
+  display: block;
+}
+
+/* Navigationen (skjult som standard) */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #fae7d8;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  padding: 100px;
+  border: 1px solid #ccc;
+  z-index: 999;
+
+  align-items: center;
+  gap: 60px;
+  width: 250px;
+}
+
+.nav-links a {
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: Labrada;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.2s ease;
+  background-color: #b2632c;
+  padding: 5px;
+  width: 200px;
+}
+
+/* Når menuen er aktiv */
+.nav-links.active {
+  display: flex;
+}
+
+.tema-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.tema-container h1 {
+  color: #fff;
+  font-family: "Radio Canada Big";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #b2632c;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.pil {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.pil img {
+  position: absolute;
+  transition: transform 0.2s ease;
+  right: 365px;
+  top: 40px;
+  height: 35px;
+  width: 35px;
+}
+
+.pil img:hover {
+  transform: translateX(-4px);
+}
+
+.billeder {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.billeder img {
+  padding-top: 10px;
+  height: 180px;
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.tema-container p {
+  width: 269px;
+  height: 500px;
+  flex-shrink: 0;
+  padding: 25px;
+
+  border: 1px solid #fdac15;
+  background: #fae7d8;
+  color: #000;
+  font-family: Labrada;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}

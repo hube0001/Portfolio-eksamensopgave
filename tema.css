@@ -21,31 +21,74 @@ body {
   padding: 20px;
 }
 
-.venstre {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.navnheader {
+  color: #fff;
+  font-family: Labrada;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .logo {
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .burger-menu {
   display: flex;
   flex-direction: column;
-  gap: 4px;
   cursor: pointer;
+  gap: 6px;
 }
 
 .burger-menu span {
-  display: block;
-  width: 25px;
+  width: 30px;
   height: 3px;
-  background-color: #fff;
-  border-radius: 2px;
+  background-color: #fae7d8;
+  display: block;
 }
 
+/* Navigationen (skjult som standard) */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #fae7d8;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  padding: 100px;
+  border: 1px solid #ccc;
+  z-index: 999;
+
+  align-items: center;
+  gap: 60px;
+  width: 250px;
+}
+
+.nav-links a {
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: Labrada;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.2s ease;
+  background-color: #b2632c;
+  padding: 5px;
+  width: 200px;
+}
+
+/* Når menuen er aktiv */
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid black;
+}
 .tema-container {
   display: flex;
   flex-direction: column;

@@ -21,35 +21,75 @@ body {
   padding: 20px;
 }
 
-.venstre {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.navnheader {
+  color: #fff;
+  font-family: Labrada;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .logo {
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .burger-menu {
   display: flex;
   flex-direction: column;
-  gap: 4px;
   cursor: pointer;
+  gap: 6px;
 }
 
 .burger-menu span {
-  display: block;
-  width: 25px;
+  width: 30px;
   height: 3px;
-  background-color: #fff;
-  border-radius: 2px;
+  background-color: #fae7d8;
+  display: block;
+}
+
+/* Navigationen (skjult som standard) */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #fae7d8;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  padding: 100px;
+  border: 1px solid #ccc;
+  z-index: 999;
+
+  align-items: center;
+  gap: 60px;
+  width: 250px;
+}
+
+.nav-links a {
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: Labrada;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.2s ease;
+  background-color: #b2632c;
+  padding: 5px;
+  width: 200px;
+}
+
+/* Når menuen er aktiv */
+.nav-links.active {
+  display: flex;
 }
 
 .tema-container {
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -71,20 +111,54 @@ h1 {
   transition: all 0.3s ease;
 }
 
+.pil {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.pil img {
+  position: absolute;
+  left: 350px; /* Det er hvor langt fra den skal være fra venstre side */
+  top: 50px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+  height: 35px;
+  width: 35px;
+}
+
+.pil img:hover {
+  transform: translateX(4px);
+}
+
+.billeder {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
 .billeder img {
-  width: 20%;
-  margin-left: 20px;
-  margin-right: 5px;
+  padding-top: 10px;
+  width: 200px;
+  flex-shrink: 0;
 }
 
 .tekst-container {
   width: 269px;
-  height: 423px;
+  height: 490px;
   flex-shrink: 0;
   padding: 25px;
 
   border: 1px solid #fdac15;
   background: #fae7d8;
+
+  margin-bottom: 30px;
 }
 
 .tekst-container p {
