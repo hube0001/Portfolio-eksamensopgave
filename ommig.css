@@ -139,3 +139,194 @@ body {
   font-weight: 400;
   line-height: 25px;
 }
+
+.fly-in {
+  display: none;
+}
+
+.om-box {
+  display: none;
+}
+
+.frame {
+  position: relative;
+  width: 300px; /* or whatever fits your frame size */
+  height: 400px;
+  overflow: hidden;
+}
+
+.foto-ind {
+  position: absolute;
+  left: 20px;
+  top: 23px;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.frame-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none; /* let clicks go through */
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .header {
+    justify-content: space-between; /* Spread out logo + nav if needed */
+    padding: 30px 60px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    padding: 0;
+    height: auto;
+    top: auto;
+    right: auto;
+    gap: 50px;
+    border: none;
+    margin-right: 150px;
+  }
+
+  .nav-links a {
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: Labrada;
+    font-size: 20px;
+    color: white;
+    transition: color 0.2s ease;
+    background-color: #334b35;
+    border: 2px solid #fdac15;
+    padding: 5px;
+    width: 200px;
+  }
+
+  .nav-links a.active {
+    border-bottom: #fdac15;
+  }
+
+  .burger-menu {
+    display: none; /* Hide burger menu on desktop */
+  }
+
+  .ommig-tekst p {
+    color: #000;
+    font-family: Labrada;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .fly-in {
+    display: inline;
+  }
+
+  .om-box {
+    display: inline;
+  }
+
+  .om-sektion {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fly-in {
+    position: absolute;
+    top: 100px; /* hvor langt ned den lander */
+    left: calc(50% - 450px); /* til venstre for billedrammen */
+    width: 40px;
+    height: 40px;
+    background: #fdac15;
+    border-radius: 50%;
+    opacity: 0;
+    animation: drop-in 2s ease-out forwards;
+  }
+
+  /* Text box that fades in */
+  .om-box {
+    position: absolute;
+    top: 100px; /* just under the circle */
+    left: calc(50% - 400px); /* slightly more to the left */
+    background: #334b35;
+    color: #fae7d8;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-family: "Radio Canada Big";
+    max-width: 250px;
+    opacity: 0;
+    animation: fade-in 0.6s ease 1.2s forwards;
+  }
+
+  /* Drop-down animation */
+  @keyframes drop-in {
+    from {
+      transform: translateY(-900px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+  }
+
+  .frame {
+    position: relative;
+    width: 300px; /* or whatever fits your frame size */
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .foto-ind {
+    position: absolute;
+    left: 20px;
+    top: 23px;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .frame-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none; /* let clicks go through */
+  }
+
+  .ommig-tekst {
+    width: 400px;
+    height: 600px;
+  }
+  .ommig-container h2 {
+    font-size: 25px;
+  }
+}

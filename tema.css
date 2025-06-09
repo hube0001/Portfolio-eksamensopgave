@@ -102,7 +102,7 @@ body {
   border-radius: 10px;
   padding: 1.5rem;
   width: 100%;
-  max-width: 350px;
+  width: 350px;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -112,4 +112,63 @@ body {
 .tema-box:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   transform: translateY(-3px);
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .header {
+    justify-content: space-between; /* Spread out logo + nav if needed */
+    padding: 30px 60px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    padding: 0;
+    height: auto;
+    top: auto;
+    right: auto;
+    gap: 50px;
+    border: none;
+    margin-right: 150px;
+  }
+
+  .nav-links a {
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: Labrada;
+    font-size: 20px;
+    color: white;
+    transition: color 0.2s ease;
+    background-color: #334b35;
+    border: 2px solid #fdac15;
+    padding: 5px;
+    width: 200px;
+  }
+
+  .nav-links a.active {
+    border-bottom: #fdac15;
+  }
+
+  .burger-menu {
+    display: none; /* Hide burger menu on desktop */
+  }
+
+  .tema-box p {
+    font-size: 30px;
+  }
+
+  .tema-box {
+    width: 700px;
+  }
+
+  .tema-container {
+    gap: 8rem;
+    margin-top: 100px;
+  }
 }

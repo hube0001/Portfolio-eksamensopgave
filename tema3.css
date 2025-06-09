@@ -89,9 +89,12 @@ body {
 .tema-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
   margin-bottom: 30px;
+}
+.tekst {
+  margin-bottom: 20px;
 }
 
 .tema-container h1 {
@@ -105,7 +108,7 @@ body {
   border-radius: 10px;
   padding: 1.5rem;
   width: 100%;
-  max-width: 350px;
+  width: 250px;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -127,16 +130,16 @@ body {
 
 .right {
   position: absolute;
-  left: 340px; /* Det er hvor langt fra den skal være fra venstre side */
-  top: 40px;
+  left: 280px; /* Det er hvor langt fra den skal være fra venstre side */
+  top: 50px;
   transition: transform 0.2s ease;
 }
 
 .venstrepil {
   position: absolute;
   transition: transform 0.2s ease;
-  right: 340px;
-  top: 40px;
+  right: 280px;
+  top: 50px;
 }
 
 .right img:hover {
@@ -177,4 +180,144 @@ body {
   height: 140px;
   width: 140px;
   flex-shrink: 0;
+}
+
+.visit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visit img {
+  align-items: center;
+  width: 80%;
+  margin-left: 40px;
+}
+
+.visitlink {
+  margin-bottom: 20px;
+}
+
+.visitlink a {
+  text-decoration: none;
+  color: #fae7d8;
+  background-color: #b2632c;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.visitlink a {
+  text-decoration: none;
+  color: #fae7d8;
+  background-color: #ffb300;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.visitlink a:hover {
+  background-color: #b2632c;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4); /* strong shadow */
+  transform: translateY(-5px) scale(1.05);
+}
+
+/************************************* DESKTOP **********************/
+@media (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .header {
+    justify-content: space-between; /* Spread out logo + nav if needed */
+    padding: 30px 60px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    padding: 0;
+    height: auto;
+    top: auto;
+    right: auto;
+    gap: 50px;
+    border: none;
+    margin-right: 150px;
+  }
+
+  .nav-links a {
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: Labrada;
+    font-size: 20px;
+    color: white;
+    transition: color 0.2s ease;
+    background-color: #334b35;
+    border: 2px solid #fdac15;
+    padding: 5px;
+    width: 200px;
+  }
+
+  .nav-links a.active {
+    border-bottom: #fdac15;
+  }
+
+  .burger-menu {
+    display: none; /* Hide burger menu on desktop */
+  }
+
+  .tekst p {
+    color: #000;
+    font-family: Labrada;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .tema-container p {
+    width: 400px;
+    height: 600px;
+    flex-shrink: 0;
+    padding: 25px;
+    line-height: 25px;
+  }
+
+  .tema-container h1 {
+    font-size: 25px;
+    width: 400px;
+  }
+  .billeder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .visit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .visitlink {
+    padding-left: 500px;
+  }
+
+  .right {
+    left: 440px;
+    top: 60px;
+  }
+
+  .venstrepil {
+    right: 450px;
+    top: 60px;
+  }
 }

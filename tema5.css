@@ -104,8 +104,7 @@ body {
   background-color: #b2632c;
   border-radius: 10px;
   padding: 1.5rem;
-  width: 100%;
-  max-width: 350px;
+  width: 300px;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -123,8 +122,8 @@ body {
 .pil img {
   position: absolute;
   transition: transform 0.2s ease;
-  right: 365px;
-  top: 40px;
+  right: 335px;
+  top: 45px;
   height: 35px;
   width: 35px;
 }
@@ -149,12 +148,15 @@ body {
   flex-shrink: 0;
 }
 
+.tekst {
+  margin-bottom: 20px;
+}
 .tema-container p {
   width: 269px;
   height: 500px;
   flex-shrink: 0;
   padding: 25px;
-
+  gap: 50px;
   border: 1px solid #fdac15;
   background: #fae7d8;
   color: #000;
@@ -163,4 +165,120 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+.visit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visit img {
+  align-items: center;
+  width: 80%;
+  margin-left: 40px;
+}
+
+.visitlink {
+  margin-bottom: 20px;
+}
+
+.visitlink a {
+  text-decoration: none;
+  color: #fae7d8;
+  background-color: #b2632c;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.visitlink a {
+  text-decoration: none;
+  color: #fae7d8;
+  background-color: #ffb300;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.visitlink a:hover {
+  background-color: #b2632c;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4); /* strong shadow */
+  transform: translateY(-5px) scale(1.05);
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .header {
+    justify-content: space-between; /* Spread out logo + nav if needed */
+    padding: 30px 60px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    padding: 0;
+    height: auto;
+    top: auto;
+    right: auto;
+    gap: 50px;
+    border: none;
+    margin-right: 150px;
+  }
+
+  .nav-links a {
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: Labrada;
+    font-size: 20px;
+    color: white;
+    transition: color 0.2s ease;
+    background-color: #334b35;
+    border: 2px solid #fdac15;
+    padding: 5px;
+    width: 200px;
+  }
+
+  .nav-links a.active {
+    border-bottom: #fdac15;
+  }
+
+  .burger-menu {
+    display: none; /* Hide burger menu on desktop */
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .visit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .visitlink {
+    padding-left: 500px;
+  }
+
+  .tema-container p {
+    width: 400px;
+    height: 750px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .tema-container h1 {
+    font-size: 25px;
+    width: 400px;
+  }
+
+  .pil img {
+    right: 450px;
+    top: 60px;
+  }
 }

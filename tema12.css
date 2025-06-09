@@ -104,7 +104,7 @@ h1 {
   border-radius: 10px;
   padding: 1.5rem;
   width: 100%;
-  max-width: 350px;
+  width: 300px;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -121,7 +121,7 @@ h1 {
 
 .pil img {
   position: absolute;
-  left: 350px; /* Det er hvor langt fra den skal være fra venstre side */
+  left: 325px; /* Det er hvor langt fra den skal være fra venstre side */
   top: 50px;
   text-decoration: none;
   color: inherit;
@@ -149,7 +149,7 @@ h1 {
   flex-shrink: 0;
 }
 
-.tekst-container {
+.tekst-container1 {
   width: 269px;
   height: 490px;
   flex-shrink: 0;
@@ -161,7 +161,19 @@ h1 {
   margin-bottom: 30px;
 }
 
-.tekst-container p {
+.tekst-container2 {
+  width: 269px;
+  height: 490px;
+  flex-shrink: 0;
+  padding: 25px;
+
+  border: 1px solid #fdac15;
+  background: #fae7d8;
+
+  margin-bottom: 30px;
+}
+
+.tekst-container1 p {
   color: #000;
   font-family: Labrada;
   font-size: 11px;
@@ -170,11 +182,197 @@ h1 {
   line-height: 20px; /* 181.818% */
 }
 
-.tekst-container h2 {
+.tekst-container2 p {
   color: #000;
   font-family: Labrada;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 181.818% */
+}
+
+.tekst-container1 h2 {
+  color: #000;
+  font-family: "Radio Canada Big";
   font-size: 15px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 20px; /* 133.333% */
+}
+
+.tekst-container2 h2 {
+  color: #000;
+  font-family: "Radio Canada Big";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 133.333% */
+}
+
+.visit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visit img {
+  align-items: center;
+  width: 80%;
+  margin-left: 40px;
+}
+
+.visitlink {
+  margin-bottom: 20px;
+}
+
+.visitlink a {
+  text-decoration: none;
+  color: #fae7d8;
+  background-color: #ffb300;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.visitlink a:hover {
+  background-color: #b2632c;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4); /* strong shadow */
+  transform: translateY(-5px) scale(1.05);
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .header {
+    justify-content: space-between; /* Spread out logo + nav if needed */
+    padding: 30px 60px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    padding: 0;
+    height: auto;
+    top: auto;
+    right: auto;
+    gap: 50px;
+    border: none;
+    margin-right: 150px;
+  }
+
+  .nav-links a {
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: Labrada;
+    font-size: 20px;
+    color: white;
+    transition: color 0.2s ease;
+    background-color: #334b35;
+    border: 2px solid #fdac15;
+    padding: 5px;
+    width: 200px;
+  }
+
+  .nav-links a.active {
+    border-bottom: #fdac15;
+  }
+
+  .burger-menu {
+    display: none; /* Hide burger menu on desktop */
+  }
+
+  .billeder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .visit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .visitlink {
+    padding-left: 500px;
+  }
+
+  .tema-container h1 {
+    font-size: 25px;
+    width: 400px;
+  }
+
+  .tekst-container1 p {
+    color: #000;
+    font-family: Labrada;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 181.818% */
+  }
+
+  .tekst-container2 p {
+    color: #000;
+    font-family: Labrada;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 181.818% */
+  }
+
+  .tekst-container1 h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .tekst-container2 h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .tekst-container1 {
+    width: 400px;
+    height: 700px;
+    flex-shrink: 0;
+    padding: 30px;
+
+    border: 1px solid #fdac15;
+    background: #fae7d8;
+
+    margin-bottom: 30px;
+  }
+
+  .tekst-container2 {
+    width: 400px;
+    height: 700px;
+    flex-shrink: 0;
+    padding: 30px;
+
+    border: 1px solid #fdac15;
+    background: #fae7d8;
+
+    margin-bottom: 30px;
+  }
+
+  .pil img {
+    position: absolute;
+    left: 450px; /* Det er hvor langt fra den skal være fra venstre side */
+    top: 75px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+    height: 35px;
+    width: 35px;
+  }
 }

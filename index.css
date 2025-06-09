@@ -17,6 +17,10 @@ body {
   padding: 1.5rem;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
 /************************************************** HEADER *****************************/
 .header {
   display: flex;
@@ -143,6 +147,7 @@ body {
   max-width: 300px;
   margin-bottom: 2rem;
   padding-top: 60px;
+  margin-left: 80px;
 }
 
 .imagcontainer {
@@ -195,4 +200,113 @@ body {
   background-color: #b2632c; /* darker green on hover */
   box-shadow: 0 8px 29px rgba(0, 0, 0, 0.4); /* strong shadow */
   transform: translateY(-5px) scale(1.05);
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+  html,
+  body {
+    overflow: hidden;
+    height: 100%;
+  }
+  .header {
+    justify-content: space-between; /* Spread out logo + nav if needed */
+    padding: 30px 60px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    padding: 0;
+    height: auto;
+    top: auto;
+    right: auto;
+    gap: 50px;
+    border: none;
+    margin-right: 150px;
+  }
+
+  .nav-links a {
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: Labrada;
+    font-size: 20px;
+    color: white;
+    transition: color 0.2s ease;
+    background-color: #334b35;
+    border: 2px solid #fdac15;
+    padding: 5px;
+    width: 200px;
+  }
+
+  .nav-links a.active {
+    border-bottom: #fdac15;
+  }
+
+  .burger-menu {
+    display: none; /* Hide burger menu on desktop */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .forside {
+    margin-top: -50px;
+  }
+  .portfolio-title h1 {
+    z-index: 1;
+    color: #fae7d8;
+    font-family: "Radio Canada Big";
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-right: 250px;
+    margin-left: 90px;
+    margin-bottom: -40px;
+  }
+
+  .baggrundtekst {
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    color: #334b35;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fdac15;
+    font-family: "Radio Canada Big";
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120px;
+
+    margin-right: 250px;
+    margin-left: 90px;
+  }
+
+  .profil {
+    border: 1px solid #000;
+    background: #b76938;
+    width: 321px;
+    height: 510px;
+    flex-shrink: 0;
+    padding: 2rem;
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 3rem;
+    padding-top: 60px;
+    margin-left: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    margin-top: -130px;
+  }
 }
